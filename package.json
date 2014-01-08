@@ -1,0 +1,16 @@
+{
+  "name": "Stabilized",
+  "version": "0.0.0",
+  "description": "A lightweight, responsive css boilerplate. Made by Lightwell.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/lightwell3d/Stabilized",
+  "author": "Nate Beatty",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

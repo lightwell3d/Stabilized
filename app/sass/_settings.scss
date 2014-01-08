@@ -1,0 +1,22 @@
+// Play around with the boilerplate settings below
+//
+// Note: For now, the grid column count is hardcoded to be 12.
+
+
+// Grid settings
+// ==============================================
+
+$row-max-width: 1200px !default;
+$gutter-in-px: 20px !default; // Space between columns
+
+$row-xlarge-size: $row-max-width;
+$row-large-size: 960px;
+$row-medium-size: 768px;
+$row-small-size: 440px;
+$row-xsmall-size: 320px;
+
+$min-device-width: 300px;
+
+// Typography settings
+// ==============================================
+

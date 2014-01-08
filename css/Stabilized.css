@@ -1,0 +1,52 @@
+/**
+* Stabilized Boilerplate
+* ----------------------
+*
+* Built by Lightwell
+* http://lightwellstudio.com
+* 
+* Authors:
+* Nate Beatty | http://natebeatty.com
+*
+* Free to use under the MIT license.
+* https://github.com/lightwell3d/Stabilized/blob/master/LICENSE
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+.container { position: relative; width: 1200px; margin: 0 auto; padding: 0; }
+.container .column, .container .columns { float: left; display: inline; margin: 0 10px; }
+.container .row { margin-bottom: 20px; }
+.container .one.column, .container .one.columns { width: 80px; }
+.container .two.columns { width: 180px; }
+.container .three.columns { width: 380px; }
+.container .four.columns { width: 280px; }
+.container .six.columns { width: 580px; }
+.container .twelve.columns { width: 1180px; }
+
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before, .clearfix:after, .row:before, .row:after { content: '\0020'; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+.row:after, .clearfix:after { clear: both; }
+
+.row, .clearfix { zoom: 1; }
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }

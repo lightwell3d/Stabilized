@@ -27,7 +27,7 @@ First, go to [nodejs.org](http://nodejs.org) and download and install Node. A do
 
 	$ npm install -g grunt-cli
 	$ gem update --system
-	$ gem install compass
+	$ gem install compass modular-scale sass
 
 Now, clone the repository in whatever working directory you would like:
 

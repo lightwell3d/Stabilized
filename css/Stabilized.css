@@ -28,15 +28,34 @@ a img { border: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-.container { position: relative; width: 1200px; margin: 0 auto; padding: 0; }
+hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.container { position: relative; width: 1200px; margin: 0 auto; padding: 0; /* Basic Grid */ /* Offsets */ }
 .container .column, .container .columns { float: left; display: inline; margin: 0 10px; }
 .container .row { margin-bottom: 20px; }
 .container .one.column, .container .one.columns { width: 80px; }
 .container .two.columns { width: 180px; }
-.container .three.columns { width: 380px; }
-.container .four.columns { width: 280px; }
+.container .three.columns { width: 280px; }
+.container .four.columns { width: 380px; }
+.container .five.columns { width: 480px; }
 .container .six.columns { width: 580px; }
+.container .seven.columns { width: 680px; }
+.container .eight.columns { width: 780px; }
+.container .nine.columns { width: 880px; }
+.container .ten.columns { width: 980px; }
+.container .eleven.columns { width: 1080px; }
 .container .twelve.columns { width: 1180px; }
+.container .offset-by-one { margin-left: 110px; }
+.container .offset-by-two { margin-left: 210px; }
+.container .offset-by-three { margin-left: 310px; }
+.container .offset-by-four { margin-left: 410px; }
+.container .offset-by-five { margin-left: 510px; }
+.container .offset-by-six { margin-left: 610px; }
+.container .offset-by-seven { margin-left: 710px; }
+.container .offset-by-eight { margin-left: 810px; }
+.container .offset-by-nine { margin-left: 910px; }
+.container .offset-by-ten { margin-left: 1010px; }
+.container .offset-by-eleven { margin-left: 1110px; }
 
 .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
 
@@ -50,3 +69,27 @@ or wrap each row of columns in a <div class="row"> */
 
 /* You can also use a <br class="clear" /> to clear columns */
 .clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans"; font-weight: 300; color: #444444; text-rendering: optimizeLegibility; padding-top: 0.2205em; line-height: 0.93319em; padding-bottom: 0.2205em; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #d04526; }
+
+h1 { font-size: 46px; }
+h1.xlarge { font-size: 60px; }
+h1.xxlarge { font-size: 65px; }
+h1.absurd { font-size: 70px; }
+
+h2 { font-size: 35px; }
+
+h3 { font-size: 28px; }
+
+h4 { font-size: 21px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 14px; }
+
+p { font-family: "Open Sans"; font-weight: 400; font-size: 16px; margin-bottom: 10.5px; line-height: 1.3125em; }
+p.lead { font-size: 17.5px; margin-bottom: 18px; }
+
+a { color: #d04526; text-decoration: none; outline: 0; line-height: inherit; }
+a:hover { color: #c03d20; }

@@ -14,13 +14,34 @@
 		margin: 0 ($gutter-in-px / 2);
 	}
 	.row { margin-bottom: 20px; }
+
+    /* Basic Grid */
 	.one.column, 
-	.one.columns { width: ($row-max-width / 12) - $gutter-in-px; }
-	.two.columns { width: ($row-max-width / 6) - $gutter-in-px; }
-	.three.columns { width: ($row-max-width / 3) - $gutter-in-px; }
-	.four.columns { width: ($row-max-width / 4) - $gutter-in-px; }
-	.six.columns { width: ($row-max-width / 2) - $gutter-in-px; }
-	.twelve.columns { width: ($row-max-width - $gutter-in-px) }
+	.one.columns       { width: (1 * $row-max-width / 12) - $gutter-in-px; }
+	.two.columns       { width: (2 * $row-max-width / 12) - $gutter-in-px; }
+	.three.columns     { width: (3 * $row-max-width / 12) - $gutter-in-px; }
+	.four.columns      { width: (4 * $row-max-width / 12) - $gutter-in-px; }
+    .five.columns      { width: (5 * $row-max-width / 12) - $gutter-in-px; }
+	.six.columns       { width: (6 * $row-max-width / 12) - $gutter-in-px; }
+    .seven.columns     { width: (7 * $row-max-width / 12) - $gutter-in-px; }
+    .eight.columns     { width: (8 * $row-max-width / 12) - $gutter-in-px; }
+    .nine.columns      { width: (9 * $row-max-width / 12) - $gutter-in-px; }
+    .ten.columns       { width: (10 * $row-max-width / 12) - $gutter-in-px; }
+    .eleven.columns    { width: (11 * $row-max-width / 12) - $gutter-in-px; }
+	.twelve.columns    { width: (12 * $row-max-width / 12) - $gutter-in-px; }
+
+    /* Offsets */
+    .offset-by-one      { margin-left: 1 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-two      { margin-left: 2 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-three    { margin-left: 3 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-four     { margin-left: 4 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-five     { margin-left: 5 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-six      { margin-left: 6 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-seven    { margin-left: 7 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-eight    { margin-left: 8 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-nine     { margin-left: 9 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-ten      { margin-left: 10 * ($row-max-width / 12) + ($gutter-in-px / 2); }
+    .offset-by-eleven   { margin-left: 11 * ($row-max-width / 12) + ($gutter-in-px / 2); }
 }
 
 // Clearing

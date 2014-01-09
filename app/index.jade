@@ -6,10 +6,18 @@ head
 	title Stabilized | A CSS Boilerplate by Lightwell
 
 	style
-		| .columns, .column { background: #eee; text-align: center;}
+		| .columns, .column { background: #eee; text-align: center; }
+		| .row.header .columns { background: #fff; }
+		| .row.subheader .columns { background: #fff; text-align: left; }
+		| .row.bodytext .columns { background: #fff; text-align: left; }
 
 body
 	.container
+		.row.header: .twelve.columns: h1 Grid Structure
+		hr
+
+		.row.subheader: .twelve.columns: h2 Basic Grid
+
 		.row
 			.six.columns: p six cols
 			.six.columns: p six cols
@@ -17,11 +25,11 @@ body
 			.four.columns: p four cols
 			.four.columns: p four cols
 			.four.columns: p four cols
-			.four.columns: p four cols
 		.row
 			.three.columns: p three cols
 			.three.columns: p three cols
 			.three.columns: p three cols
+			.three.columns: p three cols
 		.row
 			.two.columns: p two cols
 			.two.columns: p two cols
@@ -42,3 +50,36 @@ body
 			.one.column: p one col
 			.one.column: p one col
 			.one.column: p one col
+
+		.row.subheader: .twelve.columns: h2 Column Offsets
+		.row: .eleven.columns.offset-by-one: p .eleven.columns.offset-by-one
+		.row: .ten.columns.offset-by-two: p .ten.columns.offset-by-two
+		.row: .nine.columns.offset-by-three: p .nine.columns.offset-by-three
+		.row: .eight.columns.offset-by-four: p .eight.columns.offset-by-four
+		.row: .seven.columns.offset-by-five: p .seven.columns.offset-by-five
+		.row: .six.columns.offset-by-six: p .six.columns.offset-by-six
+		.row: .five.columns.offset-by-seven: p .five.columns.offset-by-seven
+		.row: .four.columns.offset-by-eight: p .four.columns.offset-by-eight
+		.row: .three.columns.offset-by-nine: p .three.columns.offset-by-nine
+		.row: .two.columns.offset-by-ten: p .two
+		.row: .one.column.offset-by-eleven: p .one
+
+		.row.header: .twelve.columns: h1 Typography
+		hr
+
+		.row.subheader: .twelve.columns: h2 Headers
+		.row: .eight.columns.offset-by-two: h1= 'This is a <h1> header'
+		.row: .eight.columns.offset-by-two: h2= 'This is a <h2> header'
+		.row: .eight.columns.offset-by-two: h3= 'This is a <h3> header'
+		.row: .eight.columns.offset-by-two: h4= 'This is a <h4> header'
+		.row: .eight.columns.offset-by-two: h5= 'This is a <h5> header'
+		.row: .eight.columns.offset-by-two: h6= 'This is a <h6> header'
+
+		.row.subheader: .twelve.columns: h2 Body Text
+			
+		.row.bodytext
+			.twelve.columns
+				p Narwhal fashion axe Banksy, VHS banh mi farm-to-table keffiyeh Thundercats. Nostrud et tempor quis farm-to-table id bespoke. Vinyl YOLO pariatur, typewriter master cleanse dolor selvage incididunt Cosby sweater cillum gastropub fugiat. Occupy blog mollit, nesciunt synth narwhal plaid tofu. Nihil Intelligentsia DIY, Godard gentrify typewriter nisi vinyl swag blog. Delectus labore seitan, readymade occupy synth fixie selfies four loko meggings scenester aute Terry Richardson. Art party placeat bicycle rights, twee letterpress paleo voluptate cliche mumblecore kitsch elit artisan.
+				p Fingerstache wolf VHS laboris, XOXO cupidatat selfies cillum quis pop-up voluptate Cosby sweater enim scenester pork belly. Church-key tousled keffiyeh pour-over you probably haven't heard of them lomo. Cillum cray Blue Bottle, sed slow-carb tattooed before they sold out proident labore mollit you probably haven't heard of them consectetur single-origin coffee Schlitz. Polaroid mollit magna sriracha selvage, XOXO locavore fingerstache excepteur American Apparel. Intelligentsia Schlitz cred pop-up, cliche lomo Odd Future synth cardigan bitters aliquip semiotics. Laborum gluten-free eiusmod, et eu asymmetrical dolore typewriter veniam Godard culpa direct trade reprehenderit iPhone church-key. Non tofu cornhole kitsch VHS, 3 wolf moon Vice occaecat Tumblr keytar lo-fi.
+				p Cosby sweater sapiente, incididunt excepteur paleo pop-up polaroid dolore dreamcatcher vegan roof party food truck. Distillery quinoa deserunt direct trade cupidatat, aesthetic nihil ethnic VHS magna Cosby sweater. Dolore Neutra bitters food truck. Lomo nostrud exercitation, tempor before they sold out selfies try-hard Cosby sweater laboris High Life jean shorts food truck. Gentrify wayfarers commodo, aesthetic laboris sriracha dolore. Try-hard paleo fap Terry Richardson ethnic. Adipisicing elit Shoreditch keffiyeh sartorial, cray reprehenderit four loko American Apparel vegan Portland farm-to-table.
+				p Aute sint semiotics squid, Bushwick banh mi vero. Skateboard aesthetic wolf typewriter Bushwick freegan, cred raw denim officia you probably haven't heard of them biodiesel. Shabby chic eiusmod Thundercats raw denim wayfarers sartorial chia bespoke. Irure cliche fugiat, authentic Terry Richardson cupidatat banh mi ullamco master cleanse wolf 90's. Incididunt gentrify PBR flexitarian 8-bit. Roof party Thundercats put a bird on it actually. Nostrud ullamco velit mollit Intelligentsia kitsch.

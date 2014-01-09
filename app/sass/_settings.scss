@@ -1,0 +1,69 @@
+// Play around with the boilerplate settings below
+//
+// Note: For now, the grid column count is hardcoded to be 12.
+
+
+// Grid settings
+// ==============================================
+
+$row-max-width: 1200px !default;
+$gutter-in-px: 20px !default; // Space between columns
+
+$row-xlarge-size: $row-max-width;
+$row-large-size: 960px;
+$row-medium-size: 768px;
+$row-small-size: 440px;
+$row-xsmall-size: 320px;
+
+$min-device-width: 300px;
+
+// Typography settings
+// ==============================================
+
+$font-family: "Open Sans";
+$font-style-italic: italic;
+
+// Font Weights
+$font-weight-bold: 700;
+$font-weight-semibold: 600;
+$font-weight-medium: 400;
+$font-weight-regular: 400;
+$font-weight-light: 300;
+$font-weight-thin: 300;
+
+$header-font-weight: $font-weight-thin;
+$body-font-weight: $font-weight-regular;
+$link-font-weight: $font-weight-regular;
+$button-font-weight: $font-weight-semibold;
+$tabs-font-weight: $font-weight-semibold;
+
+// Vertical Rhythm Spacing
+$base-line-height: 21px !default;
+$rhythm-spacing: .168;
+$rhythm-height: .711;
+
+$ratio: golden(); // Ratio for Modular Scale
+$base-font-size: 16px !default;
+
+// Typography Colors
+$header-font-color: #444444 !default;
+$header-link-color: #d04526 !default;
+$header-link-hover-color: #c03d20 !default;
+$body-font-color: #555555 !default;
+$body-link-color: #d04526 !default;
+$body-link-hover-color: #c03d20 !default;
+
+// Sizing
+$xsmall: 10px;
+$small: 12px;
+$norm: 14px;                                                                        // $base-font-size (16px == default)
+$med: 16px;
+$large: 21px;
+$larger: 28px;
+$xlarge: 35px;
+$xxlarge: 46px;
+$xxxlarge: 50px;
+$reallybig: 60px;
+$tremendous: 65px;
+$absurd: 70px;
+

@@ -5,8 +5,3 @@
 .sass-cache
 tmp/
 node_modules/
-
-# Ignore the app in the pages branch
-app/
-package.json
-Gruntfile.js

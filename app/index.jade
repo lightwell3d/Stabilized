@@ -13,10 +13,19 @@ head
 
 body
 	.container
-		.row.header: .twelve.columns: h1 Grid Structure
+		.row.header: .twelve.columns: h1 Stabilized
+		.row.header: .twelve.columns
+			:markdown
+				A responsive css boilerplate by [Lightwell](http://lightwell3d.com).
+
+		.row.subheader: .eight.columns.offset-by-two
+			:markdown
+				Below is a set of examples exploring some possible uses of this boilerplate. Keep in mind that it is for demonstration purposes. You can find the git repository on github at [github.com/lightwell3d/Stabilized](https://github.com/lightwell3d/Stabilized). Feel free to fork or contribute.
+
+		.row.header: .twelve.columns: h2 Grid Structure
 		hr
 
-		.row.subheader: .twelve.columns: h2 Basic Grid (In Rows)
+		.row.subheader: .twelve.columns: h3 Basic Grid (In Rows)
 
 		.row
 			.six.columns: p six cols
@@ -51,7 +60,7 @@ body
 			.one.column: p one col
 			.one.column: p one col
 
-		.row.subheader: .twelve.columns: h2 Basic Grid (Nested)
+		.row.subheader: .twelve.columns: h3 Basic Grid (Nested)
 
 		.row
 			.six.columns: p six cols
@@ -76,7 +85,7 @@ body
 			.one.column: p one col
 
 
-		.row.subheader: .twelve.columns: h2 Column Offsets
+		.row.subheader: .twelve.columns: h3 Column Offsets
 		.row: .eleven.columns.offset-by-one: p .eleven.columns.offset-by-one
 		.row: .ten.columns.offset-by-two: p .ten.columns.offset-by-two
 		.row: .nine.columns.offset-by-three: p .nine.columns.offset-by-three
@@ -89,10 +98,10 @@ body
 		.row: .two.columns.offset-by-ten: p .two
 		.row: .one.column.offset-by-eleven: p .one
 
-		.row.header: .twelve.columns: h1 Typography
+		.row.header: .twelve.columns: h2 Typography
 		hr
 
-		.row.subheader: .twelve.columns: h2 Headers
+		.row.subheader: .twelve.columns: h3 Headers
 		.row: .eight.columns.offset-by-two: h1= 'This is a <h1> header'
 		.row: .eight.columns.offset-by-two: h2= 'This is a <h2> header'
 		.row: .eight.columns.offset-by-two: h3= 'This is a <h3> header'
@@ -100,7 +109,7 @@ body
 		.row: .eight.columns.offset-by-two: h5= 'This is a <h5> header'
 		.row: .eight.columns.offset-by-two: h6= 'This is a <h6> header'
 
-		.row.subheader: .twelve.columns: h2 Body Text
+		.row.subheader: .twelve.columns: h3 Body Text
 			
 		.row.bodytext
 			.twelve.columns

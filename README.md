@@ -3,7 +3,7 @@ Stabilized
 
 A lightweight, responsive css boilerplate for [Lightwell's](http://lightwell3d.com) web projects.
 
-See the sample at [lightwell3d.github.io]()
+See the sample at [lightwell3d.github.io](http://lightwell3d.github.io/Stabilized)
 
 Docs
 ---

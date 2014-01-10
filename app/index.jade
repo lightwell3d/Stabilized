@@ -1,5 +1,11 @@
 doctype html
 
+// Internet explorer Hacks
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
 head
 
 	link(rel="stylesheet",type="text/css",href="css/Stabilized.css")
@@ -21,6 +27,14 @@ body
 		.row.subheader: .eight.columns.offset-by-two
 			:markdown
 				Below is a set of examples exploring some possible uses of this boilerplate. Keep in mind that it is for demonstration purposes. You can find the git repository on github at [github.com/lightwell3d/Stabilized](https://github.com/lightwell3d/Stabilized). Feel free to fork or contribute.
+				* [Grid Structure](#grid-structure)
+				* [Visibility](#visibility)
+				* [Typography](#typography)
+
+		//- -----------------------------------------------
+		//- GRID STRUCTURE
+		//- -----------------------------------------------
+		a(id="grid-structure")
 
 		.row.header: .twelve.columns: h2 Grid Structure
 		hr
@@ -97,6 +111,35 @@ body
 		.row: .three.columns.offset-by-nine: p .three.columns.offset-by-nine
 		.row: .two.columns.offset-by-ten: p .two
 		.row: .one.column.offset-by-eleven: p .one
+
+		//- -----------------------------------------------
+		//- VISIBILITY
+		//- -----------------------------------------------
+		a(id="visibility")
+
+		.row.header: .twelve.columns: h2 Visibility
+		hr
+
+		.row
+			.twelve.columns.show-for-xlarge-only: p .show-for-xlarge-only
+			.twelve.columns.show-for-large-only: p .show-for-large-only
+			.twelve.columns.show-for-medium-only: p .show-for-medium-only
+			.twelve.columns.show-for-small-only: p .show-for-small-only
+			.twelve.columns.show-for-xsmall-only: p .show-for-xsmall-only
+		.row
+			.twelve.columns.show-for-large-up: p .show-for-large-up
+			.twelve.columns.show-for-medium-up: p .show-for-medium-up
+			.twelve.columns.show-for-small-up: p .show-for-small-up
+		.row
+			.twelve.columns.hide-for-large-up: p .hide-for-large-up
+			.twelve.columns.hide-for-medium-up: p .hide-for-medium-up
+			.twelve.columns.hide-for-small-up: p .hide-for-small-up
+
+
+		//- -----------------------------------------------
+		//- TYPOGRAPHY
+		//- -----------------------------------------------
+		a(id="typography")
 
 		.row.header: .twelve.columns: h2 Typography
 		hr

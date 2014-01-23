@@ -41,10 +41,19 @@ p {
 	font-size: $base-font-size;
 	margin-bottom: $base-line-height / 2;
 	@include adjust-leading-to(1);
+	&.left { text-align: left; }
+	&.right { text-align: right; }
+	&.center { text-align: center; }
 	&.lead {
 		font-size: $norm * 1.25;
 		margin-bottom: 18px;
 	}
+}
+
+pre { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { 
+	font: $norm 'andale mono', 'lucida console', monospace; 
+	background: #eee; 
 }
 
 // Links

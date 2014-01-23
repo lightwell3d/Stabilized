@@ -32,6 +32,7 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bott
 
 .container { position: relative; width: 1200px; margin: 0 auto; padding: 0; /* Basic Grid */ /* Offsets */ }
 .container .column, .container .columns { float: left; display: inline; margin: 0 10px 20px; }
+.container .centered { margin: 0 auto 20px; float: none; display: block; height: auto; overflow: auto; }
 .container .row { margin-bottom: 20px; }
 .container .one.column, .container .one.columns { width: 80px; }
 .container .two.columns { width: 180px; }
@@ -168,3 +169,11 @@ p.lead { font-size: 17.5px; margin-bottom: 18px; }
 
 a { color: #d04526; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #c03d20; }
+
+li ul, li ol { margin: 0; }
+
+ul, ol { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+
+ul { list-style-type: disc; }
+
+ol { list-style-type: decimal; }

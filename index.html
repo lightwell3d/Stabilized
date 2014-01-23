@@ -27,20 +27,33 @@
     </div>
     <div class="row subheader">
       <div class="eight columns offset-by-two"><p>Below is a set of examples exploring some possible uses of this boilerplate. Keep in mind that it is for demonstration purposes. You can find the git repository on github at <a href="https://github.com/lightwell3d/Stabilized">github.com/lightwell3d/Stabilized</a>. Feel free to fork or contribute.</p>
-<ul>
-<li><a href="#grid-structure">Grid Structure</a></li>
+
+      </div>
+    </div>
+    <div class="row subheader">
+      <div class="twelve columns">
+        <h3 style="text-align: center;">Contents</h3>
+      </div>
+      <div class="four columns offset-by-two"><ul>
+<li><a href="#grid-structure">Grid Structure</a><ul>
+<li><a href="#grid-structure-basic-grid">Basic Grid</a></li>
+<li><a href="#grid-structure-column-offsets">Column Offsets</a></li>
+<li><a href="#grid-structure-centered-columns">Centered Columns</a></li>
+</ul>
+</li>
 <li><a href="#visibility">Visibility</a></li>
 <li><a href="#typography">Typography</a></li>
 </ul>
 
       </div>
     </div><a id="grid-structure"></a>
+    <hr>
     <div class="row header">
       <div class="twelve columns">
         <h2>Grid Structure</h2>
       </div>
     </div>
-    <hr>
+    <hr><a id="grid-structure-basic-grid"></a>
     <div class="row subheader">
       <div class="twelve columns">
         <h3>Basic Grid (In Rows)</h3>
@@ -203,7 +216,7 @@
       <div class="one column">
         <p>one col</p>
       </div>
-    </div>
+    </div><a id="grid-structure-column-offsets"></a>
     <div class="row subheader">
       <div class="twelve columns">
         <h3>Column Offsets</h3>
@@ -263,7 +276,38 @@
       <div class="one column offset-by-eleven">
         <p>.one</p>
       </div>
+    </div><a id="grid-structure-centered-columns"></a>
+    <div class="row subheader">
+      <div class="twelve columns">
+        <h3>Centered Columns</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="eight columns centered">
+        <p>If you have an even number of columns that need to be centered, you can use the "centered" class, or you can use column offsets. What about when you have an odd-sized column, though? You should stick to the "centered" class.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="three columns centered">
+        <p>.three.columns.centered</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns centered">
+        <p>.six.columns.centered</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="nine columns centered">
+        <p>.nine.columns.centered</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns centered">
+        <p>.twelve.columns.centered</p>
+      </div>
     </div><a id="visibility"></a>
+    <hr>
     <div class="row header">
       <div class="twelve columns">
         <h2>Visibility</h2>
@@ -309,6 +353,7 @@
         <p>.hide-for-small-up</p>
       </div>
     </div><a id="typography"></a>
+    <hr>
     <div class="row header">
       <div class="twelve columns">
         <h2>Typography</h2>
@@ -348,6 +393,11 @@
     <div class="row">
       <div class="eight columns offset-by-two">
         <h6>This is a &lt;h6&gt; header</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns offset-by-three">
+        <p>Even though the above examples are meant to demonstrate the typography of the header sizes, you should know that they also reveal a convenient way to center columns. Instead of using the "centered" class, you can just specify a column size and an offset size. For example, the columns which contain the header text above are ".eight.columns.offset-by-two". The two-column offset dissappears and the columns are displayed full-width when the screen gets narrow enough. Cool!</p>
       </div>
     </div>
     <div class="row subheader">

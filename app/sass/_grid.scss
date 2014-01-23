@@ -13,7 +13,14 @@
 		display: inline;
 		margin: 0 ($gutter-in-px / 2) 20px;
 	}
-	.row { margin-bottom: $gutter-in-px; }
+    .centered {
+        margin: 0 auto 20px;
+        float: none;
+        display: block;
+        height: auto;
+        overflow: auto; // Hack to get dynamic vertical resizing
+    }
+    .row { margin-bottom: $gutter-in-px; }
 
     /* Basic Grid */
     .one.column, 

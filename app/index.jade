@@ -27,18 +27,27 @@ body
 		.row.subheader: .eight.columns.offset-by-two
 			:markdown
 				Below is a set of examples exploring some possible uses of this boilerplate. Keep in mind that it is for demonstration purposes. You can find the git repository on github at [github.com/lightwell3d/Stabilized](https://github.com/lightwell3d/Stabilized). Feel free to fork or contribute.
-				* [Grid Structure](#grid-structure)
-				* [Visibility](#visibility)
-				* [Typography](#typography)
+
+		.row.subheader
+			.twelve.columns: h3(style='text-align: center;') Contents
+			.four.columns.offset-by-two
+				:markdown
+					* [Grid Structure](#grid-structure)
+						* [Basic Grid](#grid-structure-basic-grid)
+						* [Column Offsets](#grid-structure-column-offsets)
+						* [Centered Columns](#grid-structure-centered-columns)
+					* [Visibility](#visibility)
+					* [Typography](#typography)
 
 		//- -----------------------------------------------
 		//- GRID STRUCTURE
 		//- -----------------------------------------------
 		a(id="grid-structure")
-
+		hr
 		.row.header: .twelve.columns: h2 Grid Structure
 		hr
 
+		a(id="grid-structure-basic-grid")
 		.row.subheader: .twelve.columns: h3 Basic Grid (In Rows)
 
 		.row
@@ -98,8 +107,9 @@ body
 			.one.column: p one col
 			.one.column: p one col
 
-
+		a(id="grid-structure-column-offsets")
 		.row.subheader: .twelve.columns: h3 Column Offsets
+
 		.row: .eleven.columns.offset-by-one: p .eleven.columns.offset-by-one
 		.row: .ten.columns.offset-by-two: p .ten.columns.offset-by-two
 		.row: .nine.columns.offset-by-three: p .nine.columns.offset-by-three
@@ -112,11 +122,21 @@ body
 		.row: .two.columns.offset-by-ten: p .two
 		.row: .one.column.offset-by-eleven: p .one
 
+		a(id="grid-structure-centered-columns")
+		.row.subheader: .twelve.columns: h3 Centered Columns
+
+		.row: .eight.columns.centered: p If you have an even number of columns that need to be centered, you can use the "centered" class, or you can use column offsets. What about when you have an odd-sized column, though? You should stick to the "centered" class.
+
+		.row: .three.columns.centered: p .three.columns.centered
+		.row: .six.columns.centered: p .six.columns.centered
+		.row: .nine.columns.centered: p .nine.columns.centered
+		.row: .twelve.columns.centered: p .twelve.columns.centered
+
 		//- -----------------------------------------------
 		//- VISIBILITY
 		//- -----------------------------------------------
 		a(id="visibility")
-
+		hr
 		.row.header: .twelve.columns: h2 Visibility
 		hr
 
@@ -140,7 +160,7 @@ body
 		//- TYPOGRAPHY
 		//- -----------------------------------------------
 		a(id="typography")
-
+		hr
 		.row.header: .twelve.columns: h2 Typography
 		hr
 
@@ -151,6 +171,8 @@ body
 		.row: .eight.columns.offset-by-two: h4= 'This is a <h4> header'
 		.row: .eight.columns.offset-by-two: h5= 'This is a <h5> header'
 		.row: .eight.columns.offset-by-two: h6= 'This is a <h6> header'
+
+		.row: .six.columns.offset-by-three: p Even though the above examples are meant to demonstrate the typography of the header sizes, you should know that they also reveal a convenient way to center columns. Instead of using the "centered" class, you can just specify a column size and an offset size. For example, the columns which contain the header text above are ".eight.columns.offset-by-two". The two-column offset dissappears and the columns are displayed full-width when the screen gets narrow enough. Cool!
 
 		.row.subheader: .twelve.columns: h3 Body Text
 			

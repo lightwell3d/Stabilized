@@ -18,6 +18,17 @@ head
 		| .row.bodytext .columns { background: #fff; text-align: left; }
 
 body
+	.navheader.clearfix
+		h1: a(href='http://lightwell3d.com') lightwell3d.com
+		input(type='checkbox', id='toggle')
+		div.nav
+			label(for='toggle' class='toggle' data-open='Main Menu' data-close='Close Menu' onclick)
+			ul.menu
+				li: a(href='#') Item One
+				li: a(href='#') Item Two
+				li: a(href='#') Item Three
+				li: a(href='#') Item Four
+
 	.container
 		.row.header: .twelve.columns: h1 Stabilized
 		.row.header: .twelve.columns

@@ -15,24 +15,29 @@ head
 
 	style
 		| .columns, .column { background: #eee; text-align: center; }
-		| .row.header .columns { background: #fff; }
+		| .row.header { margin: 0; }
+		| .navbar { margin: 15px 0; }
+		| .row.header .columns { background: #fff; margin: 0; }
 		| .row.subheader .columns { background: #fff; text-align: left; }
 		| .row.bodytext .columns { background: #fff; text-align: left; }
 
 body
+
+	.container
+		.row.header: .twelve.columns: h1 Stabilized
+
 	.navbar
 		input(type='checkbox', id='toggle')
 		div.nav
 			label(for='toggle' class='toggle' onclick)
 			ul.menu
-				li: a(href='#') Menu Item One
-				li: a(href='#') Menu Item Two
-				li: a(href='#') Menu Item Three
+				li: a(href='http://github.com').first Home
+				li: a(href='https://github.com/lightwell3d/ConnorKitchens') Git Repo
+				li: a(href='http://lightwell3d.com') Lightwell
 				li: a(href='#') Menu Item Four
+				li: a(href='#') Menu Item Five
 
 	.container
-		.row.header: .twelve.columns: h1 Stabilized
-
 		.row.header: .twelve.columns
 			:markdown
 				A responsive css boilerplate by [Lightwell](http://lightwell3d.com).

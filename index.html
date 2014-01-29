@@ -9,30 +9,35 @@
   <title>Stabilized | A CSS Boilerplate by Lightwell</title>
   <style>
     .columns, .column { background: #eee; text-align: center; }
-    .row.header .columns { background: #fff; }
+    .row.header { margin: 0; }
+    .navbar { margin: 15px 0; }
+    .row.header .columns { background: #fff; margin: 0; }
     .row.subheader .columns { background: #fff; text-align: left; }
     .row.bodytext .columns { background: #fff; text-align: left; }
   </style>
 </head>
 <body>
-  <div class="navbar">
-    <input type="checkbox" id="toggle">
-    <div class="nav">
-      <label for="toggle" onclick class="toggle"></label>
-      <ul class="menu">
-        <li><a href="#">Menu Item One</a></li>
-        <li><a href="#">Menu Item Two</a></li>
-        <li><a href="#">Menu Item Three</a></li>
-        <li><a href="#">Menu Item Four</a></li>
-      </ul>
-    </div>
-  </div>
   <div class="container">
     <div class="row header">
       <div class="twelve columns">
         <h1>Stabilized</h1>
       </div>
     </div>
+  </div>
+  <div class="navbar">
+    <input type="checkbox" id="toggle">
+    <div class="nav">
+      <label for="toggle" onclick class="toggle"></label>
+      <ul class="menu">
+        <li><a href="http://github.com" class="first">Home</a></li>
+        <li><a href="https://github.com/lightwell3d/ConnorKitchens">Git Repo</a></li>
+        <li><a href="http://lightwell3d.com">Lightwell</a></li>
+        <li><a href="#">Menu Item Four</a></li>
+        <li><a href="#">Menu Item Five</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
     <div class="row header">
       <div class="twelve columns"><p>A responsive css boilerplate by <a href="http://lightwell3d.com">Lightwell</a>.</p>
 

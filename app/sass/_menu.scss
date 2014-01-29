@@ -22,11 +22,14 @@
 		text-align: $navbar-menu-position;
 		margin: 0;
 		padding: 0;
+		font-size: 0;
 
 		li {
 			list-style: none;
 			background: $navbar-item-background-color;
 			display: inline-block;
+			padding: 0;
+			margin: 0;
 
 			a {
 				height: 100%;
@@ -37,6 +40,10 @@
 				font-size: $navbar-link-font-size;
 				color: $navbar-link-color;
 				line-height: 1;
+
+				border-left: 1px solid $navbar-link-color;
+
+				&.first { border-left: none; }
 
 				&:hover {
 					background: $navbar-item-background-hover-color;
@@ -49,7 +56,7 @@
 	// .clearfix:before, .clearfix:after { display: table; content: ""; }
 	// .clearfix:after { clear: both; }
 
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: $row-medium-size) {
 
 		.nav { float: right; }
 
@@ -71,12 +78,14 @@
 				width: 100%;
 				margin: 0;
 				float: left;
+				overflow: hidden;
 
 				a { 
 					display: block;
 					height: auto;
 					margin: 0;
-					padding: (($navbar-height - $navbar-link-font-size) / 4) 20px;
+					// padding: (($navbar-height - $navbar-link-font-size) / 4) 10px;
+					padding: 16px 10px;
 					width: 100%;
 					text-decoration: none;
 				}
@@ -95,7 +104,7 @@
 				display: block;
 				width: 50px;
 				margin: (($navbar-height - ($navbar-link-font-size * 2)) / 2) 0;
-				padding: 0 20px;
+				padding: 0;
 				text-align: center;
 				font-size: $navbar-link-font-size * 2;
 				color: #ccc;

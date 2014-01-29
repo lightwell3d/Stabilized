@@ -1,29 +1,78 @@
-
-/** Can't touch this **/
-
-.navheader {
+.navbar {
 	position: relative;
-	#toggle, .toggle { display: none; }
-	.menu > li { list-style: none; float: left; }
+	min-height: $navbar-height;
+	height: 100%;
+	padding: 0 20px;
+	background: $navbar-background-color;
 
-	.clearfix:before, .clearfix:after { display: table; content: ""; }
-	.clearfix:after { clear: both; }
+	#toggle, .toggle { 
+		display: none;
+		z-index: 100; // Make sure this is always on top
+	}
 
-	@media only screen and (max-width: 768px){
-		.menu { 
+	.nav {
+		display: block;
+	}
+
+	/** Full size styles **/
+	ul.menu {
+		height: 100%;
+		text-align: center;
+
+		li {
+			list-style: none;
+			background: $navbar-item-background-color;
+			display: inline-block;
+
+			a {
+				height: 100%;
+				display: block;
+				padding: (($navbar-height - $navbar-link-font-size) / 2) 20px;
+				text-decoration: none;
+				font-weight: normal;
+				font-size: $navbar-link-font-size;
+				color: $navbar-link-color;
+				line-height: 1;
+
+				&:hover {
+					background: $navbar-item-background-hover-color;
+					color: $navbar-link-hover-color;
+				}
+			}
+		}
+	}
+
+	// .clearfix:before, .clearfix:after { display: table; content: ""; }
+	// .clearfix:after { clear: both; }
+
+	@media only screen and (max-width: 768px) {
+
+		.nav { float: right; }
+
+		ul.menu { 
+			text-align: left;
 			display: none; 
-			opacity: 0; 
-			width: 100%; 
-			position: absolute; // Change to relative or whatever to alter subsequent div positions on open
+			opacity: 0;
+			position: absolute;
 			right: 0;
+			height: auto;
+			width: 100%;
+			margin: 0;
 			background: #eee;
 			z-index: 100;
-			> li {
+
+			li {
 				display: block;
+				height: auto;
 				width: 100%;
 				margin: 0;
-				> a { 
+				float: left;
+
+				a { 
 					display: block;
+					height: auto;
+					margin: 0;
+					padding: (($navbar-height - $navbar-link-font-size) / 4) 20px;
 					width: 100%;
 					text-decoration: none;
 				}
@@ -35,102 +84,23 @@
 			cursor: pointer;
 			-webkit-touch-callout: none;
 			-webkit-user-select: none;
-			user-select: none; 
+			user-select: none;
+
+			&:after {
+				content: "☰";
+				display: block;
+				width: 50px;
+				margin: (($navbar-height - ($navbar-link-font-size * 2)) / 2) 0;
+				padding: 0 20px;
+				text-align: center;
+				font-size: $navbar-link-font-size * 2;
+				color: #ccc;
+			}
 		}
 		#toggle:checked + div .menu {
 			display: block; 
 			opacity: 1;
 		}
-	}
-}
-
-/** Hammer Time **/
-
-.navheader {
-
-	/** Custom Stuff **/
-
-	min-height: 100px;
-	height: 100%;
-	padding: 0 20px;
-	background: #fff;
-	> h1 {
-		float: left;
-		padding: 30px 0 0;
-		font-size: 28px;
-		color: #dfdfdf;
-		a {
-			color: inherit;
-			&:hover {
-				color: #cfcfcf;
-			}
-		}
-	}
-
-	/** Nav Stuff **/
-	.nav {
-		display: block;
-		float: right;
-	}
-
-	.nav, .menu, .menu > li, .menu > li > a { 
-		height: 100%; 
-	}
-
-	.menu > li > a {
-		display: block;
-		padding: 42px 20px;
-		text-decoration: none;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 1;
-	}
-
-	.menu > li > a:hover, .menu > li > a:focus {
-		background: #F2F2F2;
-		color: #51C1F1;
-	}
-
-	.toggle { 
-		z-index: 2; 
-	}
-
-	@media only screen and (max-width: 768px){
-		.menu{
-			background: #fff;
-		}
-
-		.menu, .menu > li, .menu > li > a {
-			height: auto;
-			margin: 0;
-		}
-
-		.menu > li > a {
-			padding: 15px 15px;
-		}
-
-		.menu > li > a:hover, .menu > li > a:focus{
-			background: #F2F2F2;
-		}
-
-		.toggle:after {
-			content: "☰";
-			display: block;
-			width: 50px;
-			margin: 33px 0;
-			padding: 0 20px;
-			text-align: center;
-			font-size: 28px;
-			color: #ccc;
-			// background: #51C1F1;
-			// -webkit-border-radius: 2px;
-			// border-radius: 2px;
-		}
-
-		.toggle:hover:after{
-			// background: #45ABD6;
-		}
-
 		#toggle:checked + div .toggle:after{
 			content: "✕";
 		}

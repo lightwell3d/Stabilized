@@ -1,3 +1,6 @@
+// Headers
+// ==============================================
+
 h1,h2,h3,h4,h5,h6 {
 	font-family: $font-family;
 	font-weight: $header-font-weight;
@@ -29,17 +32,32 @@ h4 { font-size: $large; }
 h5 { font-size: $med; }
 h6 { font-size: $norm; }
 
+// Body Text
+// ==============================================
+
 p {
 	font-family: $font-family;
 	font-weight: $body-font-weight;
 	font-size: $base-font-size;
 	margin-bottom: $base-line-height / 2;
 	@include adjust-leading-to(1);
+	&.left { text-align: left; }
+	&.right { text-align: right; }
+	&.center { text-align: center; }
 	&.lead {
 		font-size: $norm * 1.25;
 		margin-bottom: 18px;
 	}
 }
+
+pre { margin: 1.5em 0; white-space: pre; }
+pre,code,tt { 
+	font: $norm 'andale mono', 'lucida console', monospace; 
+	background: #eee; 
+}
+
+// Links
+// ==============================================
 
 a {
 	color: $body-link-color;
@@ -50,3 +68,11 @@ a {
 		color: $body-link-hover-color;
 	}
 }
+
+// Lists
+// ==============================================
+
+li ul, li ol    { margin: 0; }
+ul, ol          { margin: 0 1.5em 1.5em 0; padding-left: 1.5em; }
+ul              { list-style-type: disc; }
+ol              { list-style-type: decimal; }

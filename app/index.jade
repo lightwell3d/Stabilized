@@ -8,18 +8,36 @@ doctype html
 
 head
 
+	meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+
 	link(rel="stylesheet",type="text/css",href="css/Stabilized.css")
 	title Stabilized | A CSS Boilerplate by Lightwell
 
 	style
 		| .columns, .column { background: #eee; text-align: center; }
-		| .row.header .columns { background: #fff; }
+		| .row.header { margin: 0; }
+		| .navbar { margin: 15px 0; }
+		| .row.header .columns { background: #fff; margin: 0; }
 		| .row.subheader .columns { background: #fff; text-align: left; }
 		| .row.bodytext .columns { background: #fff; text-align: left; }
 
 body
+
 	.container
 		.row.header: .twelve.columns: h1 Stabilized
+
+	.navbar
+		input(type='checkbox', id='toggle')
+		div.nav
+			label(for='toggle' class='toggle' onclick)
+			ul.menu
+				li: a(href='http://github.com').first Home
+				li: a(href='https://github.com/lightwell3d/ConnorKitchens') Git Repo
+				li: a(href='http://lightwell3d.com') Lightwell
+				li: a(href='#') Menu Item Four
+				li: a(href='#') Menu Item Five
+
+	.container
 		.row.header: .twelve.columns
 			:markdown
 				A responsive css boilerplate by [Lightwell](http://lightwell3d.com).
@@ -27,18 +45,27 @@ body
 		.row.subheader: .eight.columns.offset-by-two
 			:markdown
 				Below is a set of examples exploring some possible uses of this boilerplate. Keep in mind that it is for demonstration purposes. You can find the git repository on github at [github.com/lightwell3d/Stabilized](https://github.com/lightwell3d/Stabilized). Feel free to fork or contribute.
-				* [Grid Structure](#grid-structure)
-				* [Visibility](#visibility)
-				* [Typography](#typography)
+
+		.row.subheader
+			.twelve.columns: h3(style='text-align: center;') Contents
+			.four.columns.offset-by-two
+				:markdown
+					* [Grid Structure](#grid-structure)
+						* [Basic Grid](#grid-structure-basic-grid)
+						* [Column Offsets](#grid-structure-column-offsets)
+						* [Centered Columns](#grid-structure-centered-columns)
+					* [Visibility](#visibility)
+					* [Typography](#typography)
 
 		//- -----------------------------------------------
 		//- GRID STRUCTURE
 		//- -----------------------------------------------
 		a(id="grid-structure")
-
+		hr
 		.row.header: .twelve.columns: h2 Grid Structure
 		hr
 
+		a(id="grid-structure-basic-grid")
 		.row.subheader: .twelve.columns: h3 Basic Grid (In Rows)
 
 		.row
@@ -98,8 +125,9 @@ body
 			.one.column: p one col
 			.one.column: p one col
 
-
+		a(id="grid-structure-column-offsets")
 		.row.subheader: .twelve.columns: h3 Column Offsets
+
 		.row: .eleven.columns.offset-by-one: p .eleven.columns.offset-by-one
 		.row: .ten.columns.offset-by-two: p .ten.columns.offset-by-two
 		.row: .nine.columns.offset-by-three: p .nine.columns.offset-by-three
@@ -112,11 +140,21 @@ body
 		.row: .two.columns.offset-by-ten: p .two
 		.row: .one.column.offset-by-eleven: p .one
 
+		a(id="grid-structure-centered-columns")
+		.row.subheader: .twelve.columns: h3 Centered Columns
+
+		.row: .eight.columns.centered: p If you have an even number of columns that need to be centered, you can use the "centered" class, or you can use column offsets. What about when you have an odd-sized column, though? You should stick to the "centered" class.
+
+		.row: .three.columns.centered: p .three.columns.centered
+		.row: .six.columns.centered: p .six.columns.centered
+		.row: .nine.columns.centered: p .nine.columns.centered
+		.row: .twelve.columns.centered: p .twelve.columns.centered
+
 		//- -----------------------------------------------
 		//- VISIBILITY
 		//- -----------------------------------------------
 		a(id="visibility")
-
+		hr
 		.row.header: .twelve.columns: h2 Visibility
 		hr
 
@@ -140,7 +178,7 @@ body
 		//- TYPOGRAPHY
 		//- -----------------------------------------------
 		a(id="typography")
-
+		hr
 		.row.header: .twelve.columns: h2 Typography
 		hr
 
@@ -152,11 +190,14 @@ body
 		.row: .eight.columns.offset-by-two: h5= 'This is a <h5> header'
 		.row: .eight.columns.offset-by-two: h6= 'This is a <h6> header'
 
+		.row: .six.columns.offset-by-three: p Even though the above examples are meant to demonstrate the typography of the header sizes, you should know that they also reveal a convenient way to center columns. Instead of using the "centered" class, you can just specify a column size and an offset size. For example, the columns which contain the header text above are ".eight.columns.offset-by-two". The two-column offset dissappears and the columns are displayed full-width when the screen gets narrow enough. Cool!
+
 		.row.subheader: .twelve.columns: h3 Body Text
 			
 		.row.bodytext
 			.twelve.columns
 				p Narwhal fashion axe Banksy, VHS banh mi farm-to-table keffiyeh Thundercats. Nostrud et tempor quis farm-to-table id bespoke. Vinyl YOLO pariatur, typewriter master cleanse dolor selvage incididunt Cosby sweater cillum gastropub fugiat. Occupy blog mollit, nesciunt synth narwhal plaid tofu. Nihil Intelligentsia DIY, Godard gentrify typewriter nisi vinyl swag blog. Delectus labore seitan, readymade occupy synth fixie selfies four loko meggings scenester aute Terry Richardson. Art party placeat bicycle rights, twee letterpress paleo voluptate cliche mumblecore kitsch elit artisan.
+
 				p Fingerstache wolf VHS laboris, XOXO cupidatat selfies cillum quis pop-up voluptate Cosby sweater enim scenester pork belly. Church-key tousled keffiyeh pour-over you probably haven't heard of them lomo. Cillum cray Blue Bottle, sed slow-carb tattooed before they sold out proident labore mollit you probably haven't heard of them consectetur single-origin coffee Schlitz. Polaroid mollit magna sriracha selvage, XOXO locavore fingerstache excepteur American Apparel. Intelligentsia Schlitz cred pop-up, cliche lomo Odd Future synth cardigan bitters aliquip semiotics. Laborum gluten-free eiusmod, et eu asymmetrical dolore typewriter veniam Godard culpa direct trade reprehenderit iPhone church-key. Non tofu cornhole kitsch VHS, 3 wolf moon Vice occaecat Tumblr keytar lo-fi.
 				p Cosby sweater sapiente, incididunt excepteur paleo pop-up polaroid dolore dreamcatcher vegan roof party food truck. Distillery quinoa deserunt direct trade cupidatat, aesthetic nihil ethnic VHS magna Cosby sweater. Dolore Neutra bitters food truck. Lomo nostrud exercitation, tempor before they sold out selfies try-hard Cosby sweater laboris High Life jean shorts food truck. Gentrify wayfarers commodo, aesthetic laboris sriracha dolore. Try-hard paleo fap Terry Richardson ethnic. Adipisicing elit Shoreditch keffiyeh sartorial, cray reprehenderit four loko American Apparel vegan Portland farm-to-table.
 				p Aute sint semiotics squid, Bushwick banh mi vero. Skateboard aesthetic wolf typewriter Bushwick freegan, cred raw denim officia you probably haven't heard of them biodiesel. Shabby chic eiusmod Thundercats raw denim wayfarers sartorial chia bespoke. Irure cliche fugiat, authentic Terry Richardson cupidatat banh mi ullamco master cleanse wolf 90's. Incididunt gentrify PBR flexitarian 8-bit. Roof party Thundercats put a bird on it actually. Nostrud ullamco velit mollit Intelligentsia kitsch.

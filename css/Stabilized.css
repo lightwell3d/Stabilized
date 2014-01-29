@@ -145,7 +145,7 @@ or wrap each row of columns in a <div class="row"> */
 .navbar { position: relative; min-height: 100px; height: 100%; padding: 0 20px; background: white; /** Full size styles **/ }
 .navbar #toggle, .navbar .toggle { display: none; z-index: 100; }
 .navbar .nav { display: block; }
-.navbar ul.menu { height: 100%; text-align: center; }
+.navbar ul.menu { height: 100%; text-align: center; margin: 0; padding: 0; }
 .navbar ul.menu li { list-style: none; background: white; display: inline-block; }
 .navbar ul.menu li a { height: 100%; display: block; padding: 42px 20px; text-decoration: none; font-weight: normal; font-size: 16px; color: #666666; line-height: 1; }
 .navbar ul.menu li a:hover { background: #dddddd; color: #222222; }

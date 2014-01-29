@@ -1,3 +1,5 @@
+// Note: A `.navbar` needs to be outside of the container to work properly
+
 .navbar {
 	position: relative;
 	min-height: $navbar-height;
@@ -17,7 +19,9 @@
 	/** Full size styles **/
 	ul.menu {
 		height: 100%;
-		text-align: center;
+		text-align: $navbar-menu-position;
+		margin: 0;
+		padding: 0;
 
 		li {
 			list-style: none;

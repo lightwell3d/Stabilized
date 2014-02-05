@@ -27,6 +27,7 @@
 		li {
 			list-style: none;
 			background: $navbar-item-background-color;
+			text-align: $navbar-item-position;
 			display: inline-block;
 			padding: 0;
 			margin: 0;
@@ -78,7 +79,7 @@
 				width: 100%;
 				margin: 0;
 				float: left;
-				overflow: hidden;
+				overflow: hidden; // Hack to prevent overflow on IE (< 8)
 
 				a { 
 					display: block;
@@ -88,6 +89,7 @@
 					padding: 16px 10px;
 					width: 100%;
 					text-decoration: none;
+					@include box-sizing(border-box);
 				}
 			}
 		}

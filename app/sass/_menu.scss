@@ -59,7 +59,10 @@
 
 	@media only screen and (max-width: $row-medium-size) {
 
-		.nav { float: right; }
+		.nav {
+			// float: $navbar-icon-position;
+			width: 100%;
+		}
 
 		ul.menu { 
 			text-align: left;
@@ -100,14 +103,24 @@
 			-webkit-touch-callout: none;
 			-webkit-user-select: none;
 			user-select: none;
+			// vertical-align: middle;
+
+			// @if $navbar-icon-position == center {
+			// 	width: 50px;
+			// 	margin: 0 auto;
+			// } 
+			// @else if $navbar-icon-position == left {
+			// 	width: 50px;
+			// }
+			// @else { /* */ }
 
 			&:after {
 				content: "☰";
 				display: block;
-				width: 50px;
+				width: 100%;
 				margin: (($navbar-height - ($navbar-link-font-size * 2)) / 2) 0;
 				padding: 0;
-				text-align: center;
+				text-align: $navbar-toggle-icon-position;
 				font-size: $navbar-link-font-size * 2;
 				color: #ccc;
 			}

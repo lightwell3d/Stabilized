@@ -142,6 +142,22 @@ or wrap each row of columns in a <div class="row"> */
 .ie.ie8 .container .offset-by-ten { margin-left: 810px; }
 .ie.ie8 .container .offset-by-eleven { margin-left: 890px; }
 
+ul.block-grid { font-size: 0; list-style-type: none; }
+ul.block-grid li { font-size: 16px; display: inline-block; vertical-align: top; margin: 0; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ul.block-grid li img { width: 100%; }
+ul.two-blocks li { width: 50%; }
+ul.three-blocks li { width: 33.33333%; }
+ul.four-blocks li { width: 25%; }
+ul.five-blocks li { width: 20%; }
+ul.six-blocks li { width: 16.66667%; }
+ul.seven-blocks li { width: 14.28571%; }
+ul.eight-blocks li { width: 12.5%; }
+ul.nine-blocks li { width: 11.11111%; }
+ul.ten-blocks li { width: 10%; }
+ul.eleven-blocks li { width: 9.09091%; }
+ul.twelve-blocks li { width: 8.33333%; }
+
+@media only screen and (max-width: 768px) { ul[class*='blocks'].block-grid li { width: 100%; } }
 .navbar { position: relative; min-height: 28px; height: 100%; padding: 0 20px; background: white; /** Full size styles **/ }
 .navbar #toggle, .navbar .toggle { display: none; z-index: 100; }
 .navbar .nav { display: block; }

@@ -142,18 +142,34 @@ or wrap each row of columns in a <div class="row"> */
 .ie.ie8 .container .offset-by-ten { margin-left: 810px; }
 .ie.ie8 .container .offset-by-eleven { margin-left: 890px; }
 
+ul.block-grid { font-size: 0; list-style-type: none; text-align: left; }
+ul.block-grid li { font-size: 16px; display: inline-block; vertical-align: top; margin: 0; padding: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+ul.block-grid li img { width: 100%; }
+ul.two-blocks li { width: 50%; }
+ul.three-blocks li { width: 33.33333%; }
+ul.four-blocks li { width: 25%; }
+ul.five-blocks li { width: 20%; }
+ul.six-blocks li { width: 16.66667%; }
+ul.seven-blocks li { width: 14.28571%; }
+ul.eight-blocks li { width: 12.5%; }
+ul.nine-blocks li { width: 11.11111%; }
+ul.ten-blocks li { width: 10%; }
+ul.eleven-blocks li { width: 9.09091%; }
+ul.twelve-blocks li { width: 8.33333%; }
+
+@media only screen and (max-width: 768px) { ul[class*='blocks'].block-grid li { width: 100%; } }
 .navbar { position: relative; min-height: 28px; height: 100%; padding: 0 20px; background: white; /** Full size styles **/ }
 .navbar #toggle, .navbar .toggle { display: none; z-index: 100; }
 .navbar .nav { display: block; }
 .navbar ul.menu { height: 100%; text-align: center; margin: 0; padding: 0; font-size: 0; }
-.navbar ul.menu li { list-style: none; background: white; display: inline-block; padding: 0; margin: 0; }
+.navbar ul.menu li { list-style: none; background: white; text-align: center; display: inline-block; padding: 0; margin: 0; }
 .navbar ul.menu li a { height: 100%; display: block; padding: 7px 20px; text-decoration: none; font-weight: normal; font-size: 14px; color: #666666; line-height: 1; border-left: 1px solid #666666; }
 .navbar ul.menu li a.first { border-left: none; }
 .navbar ul.menu li a:hover { background: #dddddd; color: #222222; }
 @media only screen and (max-width: 768px) { .navbar .nav { float: right; }
   .navbar ul.menu { text-align: left; display: none; opacity: 0; position: absolute; right: 0; height: auto; width: 100%; margin: 0; background: #eee; z-index: 100; }
   .navbar ul.menu li { display: block; height: auto; width: 100%; margin: 0; float: left; overflow: hidden; }
-  .navbar ul.menu li a { display: block; height: auto; margin: 0; padding: 16px 10px; width: 100%; text-decoration: none; }
+  .navbar ul.menu li a { display: block; height: auto; margin: 0; border-left: none; padding: 16px 10px; width: 100%; text-decoration: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
   .navbar .toggle { display: block; position: relative; cursor: pointer; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
   .navbar .toggle:after { content: "☰"; display: block; width: 50px; margin: 0px 0; padding: 0; text-align: center; font-size: 28px; color: #ccc; }
   .navbar #toggle:checked + div .menu { display: block; opacity: 1; }

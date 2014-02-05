@@ -1,0 +1,90 @@
+// Block Grid
+// ==============================================
+
+ul {
+	&.block-grid {
+		font-size: 0;
+		list-style-type: none;
+		text-align: left;
+
+		li {
+			font-size: $base-font-size;
+			display: inline-block;
+			vertical-align: top;
+
+			margin: 0;
+
+			padding: $block-grid-gutter-in-px / 2;
+			
+			@include box-sizing(border-box);
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	&.two-blocks {
+		li {
+			width: ( 100% / 2 );
+		}
+	}
+	&.three-blocks {
+		li {
+			width: ( 100% / 3 );
+		}
+	}
+	&.four-blocks {
+		li {
+			width: ( 100% / 4 );
+		}
+	}
+	&.five-blocks {
+		li {
+			width: ( 100% / 5 );
+		}
+	}
+	&.six-blocks {
+		li {
+			width: ( 100% / 6 );
+		}
+	}
+	&.seven-blocks {
+		li {
+			width: ( 100% / 7 );
+		}
+	}
+	&.eight-blocks {
+		li {
+			width: ( 100% / 8 );
+		}
+	}
+	&.nine-blocks {
+		li {
+			width: ( 100% / 9 );
+		}
+	}
+	&.ten-blocks {
+		li {
+			width: ( 100% / 10 );
+		}
+	}
+	&.eleven-blocks {
+		li {
+			width: ( 100% / 11 );
+		}
+	}
+	&.twelve-blocks {
+		li {
+			width: ( 100% / 12 );
+		}
+	}
+}
+
+@media only screen and (max-width: $row-medium-size) {
+	ul[class*='blocks'].block-grid {
+		li {
+			width: 100%;
+		}
+	}
+}

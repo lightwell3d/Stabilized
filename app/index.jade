@@ -54,6 +54,7 @@ body
 						* [Basic Grid](#grid-structure-basic-grid)
 						* [Column Offsets](#grid-structure-column-offsets)
 						* [Centered Columns](#grid-structure-centered-columns)
+					* [Block Grid](#block-grid)
 					* [Visibility](#visibility)
 					* [Typography](#typography)
 
@@ -149,6 +150,45 @@ body
 		.row: .six.columns.centered: p .six.columns.centered
 		.row: .nine.columns.centered: p .nine.columns.centered
 		.row: .twelve.columns.centered: p .twelve.columns.centered
+
+		//- -----------------------------------------------
+		//- Block Grid
+		//- -----------------------------------------------
+		a(id="block-grid")
+		hr
+		.row.header: .twelve.columns: h2 Block Grid
+		hr
+
+		.row
+			ul.block-grid.three-blocks
+				li: img(src='http://placehold.it/280x200&text=LW+3')
+				li: img(src='http://placehold.it/280x200&text=LW+3')
+				li: img(src='http://placehold.it/280x200&text=LW+3')
+				li: img(src='http://placehold.it/280x200&text=LW+3')
+				li: img(src='http://placehold.it/280x200&text=LW+3')
+				li: img(src='http://placehold.it/280x200&text=LW+3')
+			ul.block-grid.seven-blocks
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+				li: img(src='http://placehold.it/280x200&text=LW+7')
+		.row: .six.columns.centered
+			p This is an example of a block grid inside of a centered column within a row. Block grids are confined to the size of the parent element, so you can make and use a block grid anywhere within your website layout.
+			ul.block-grid.five-blocks
+				li: img(src='http://placehold.it/280x200&text=LW+5')
+				li: img(src='http://placehold.it/280x200&text=LW+5')
+				li: img(src='http://placehold.it/280x200&text=LW+5')
+				li: img(src='http://placehold.it/280x200&text=LW+5')
+				li: img(src='http://placehold.it/280x200&text=LW+5')
+				li: img(src='http://placehold.it/280x200&text=LW+5')
 
 		//- -----------------------------------------------
 		//- VISIBILITY

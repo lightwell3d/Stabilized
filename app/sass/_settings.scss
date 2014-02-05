@@ -17,6 +17,8 @@ $row-xsmall-size: 320px;
 
 $min-device-width: 300px;
 
+$block-grid-gutter-in-px: 20px;
+
 // Menu settings
 // ==============================================
 $navbar-background-color: #fff;
@@ -25,6 +27,7 @@ $navbar-menu-position: center; // left, right, or center
 $navbar-link-font-size: 14px;
 $navbar-link-color: #666;
 $navbar-link-hover-color: #222;
+$navbar-item-position: center; // left, right, or center
 $navbar-item-background-color: #fff;
 $navbar-item-background-hover-color: #ddd;
 
@@ -67,7 +70,7 @@ $body-link-hover-color: #c03d20 !default;
 // Sizing
 $xsmall: 10px;
 $small: 12px;
-$norm: 14px;                                                                        // $base-font-size (16px == default)
+$norm: 14px;                                                                       // $base-font-size (16px == default)
 $med: 16px;
 $large: 21px;
 $larger: 28px;

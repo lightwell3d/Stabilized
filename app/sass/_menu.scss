@@ -57,7 +57,7 @@
 	// .clearfix:before, .clearfix:after { display: table; content: ""; }
 	// .clearfix:after { clear: both; }
 
-	@media only screen and (max-width: $row-medium-size) {
+	@media only screen and (max-width: ($row-medium-size - 1)) {
 
 		.nav {
 			// float: $navbar-icon-position;

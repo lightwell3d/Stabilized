@@ -73,7 +73,7 @@
 			height: auto;
 			width: 100%;
 			margin: 0;
-			background: #eee;
+			background: $navbar-background-color;
 			z-index: 100;
 
 			li {
@@ -122,7 +122,7 @@
 				padding: 0;
 				text-align: $navbar-toggle-icon-position;
 				font-size: $navbar-link-font-size * 2;
-				color: #ccc;
+				color: $navbar-link-color;
 			}
 		}
 		#toggle:checked + div .menu {

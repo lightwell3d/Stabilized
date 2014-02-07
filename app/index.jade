@@ -15,6 +15,7 @@ head
 
 	style
 		| .columns, .column { background: #eee; text-align: center; }
+		| .columns>p, .column>p { background: #ddd; margin: 0; padding: 5px;}
 		| .row.header { margin: 0; }
 		| .navbar { margin: 15px 0; }
 		| .row.header .columns { background: #fff; margin: 0; }
@@ -106,25 +107,12 @@ body
 
 		.row
 			.six.columns: p six cols
+				.three.columns: p three cols
+				.nine.columns: p nine cols
 			.six.columns: p six cols
-			.six.columns: p six cols
-			.six.columns: p six cols
-			.three.columns: p three cols
-			.three.columns: p three cols
-			.three.columns: p three cols
-			.three.columns: p three cols
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
-			.one.column: p one col
+				.six.columns: p six cols
+				.three.columns: p three cols
+				.three.columns: p three cols
 
 		a(id="grid-structure-column-offsets")
 		.row.subheader: .twelve.columns: h3 Column Offsets

@@ -22,7 +22,10 @@
 			float: none;
 			display: block;
 			height: auto;
-			overflow: auto; // Hack to get dynamic vertical resizing
+
+			content: "";
+			display: table;
+			clear: both;
 		}
 	}
 
@@ -76,7 +79,7 @@
 		.one.column, 
 		.one.columns,
 		.two.columns,
-		.three.columns		{ width: 50.00%; margin-bottom: $gutter-in-px; }
+		.three.columns		{ width: 50.00%; padding-bottom: $gutter-in-px; }
 		.four.columns,
 		.five.columns,
 		.six.columns,
@@ -85,7 +88,7 @@
 		.nine.columns,
 		.ten.columns,
 		.eleven.columns,
-		.twelve.columns		{ width: 100%; margin-bottom: $gutter-in-px; }
+		.twelve.columns		{ width: 100%; padding-bottom: $gutter-in-px; }
 
 		/* Offsets */
 		.offset-by-one,
@@ -112,7 +115,7 @@
 		.one.column, 
 		.one.columns,
 		.two.columns,
-		.three.columns		{ width: 50.00%; margin-bottom: $gutter-in-px; }
+		.three.columns		{ width: 50.00%; padding-bottom: $gutter-in-px; }
 		.four.columns,
 		.five.columns,
 		.six.columns,
@@ -121,7 +124,7 @@
 		.nine.columns,
 		.ten.columns,
 		.eleven.columns,
-		.twelve.columns		{ width: 100%; margin-bottom: $gutter-in-px; }
+		.twelve.columns		{ width: 100%; padding-bottom: $gutter-in-px; }
 
 		/* Offsets */
 		.offset-by-one,
@@ -157,7 +160,7 @@
 		.nine.columns,
 		.ten.columns,
 		.eleven.columns,
-		.twelve.columns     { width: 100%; margin-bottom: $gutter-in-px;}
+		.twelve.columns     { width: 100%; padding-bottom: $gutter-in-px;}
 
 		/* Offsets */
 		.offset-by-one,

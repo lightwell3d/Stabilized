@@ -21,16 +21,16 @@ $block-grid-gutter-in-px: 20px;
 
 // Menu settings
 // ==============================================
-$navbar-background-color: none;
-$navbar-height: 62px;
-$navbar-toggle-icon-position: right; // left or center
-$navbar-menu-position: right; // left, right, or center
+$navbar-background-color: #fff;
+$navbar-height: 28px;
+$navbar-toggle-icon-position: center; // left or center
+$navbar-menu-position: center; // left, right, or center
 $navbar-link-font-size: 14px;
-$navbar-link-color: #fff;
-$navbar-link-hover-color: #fff;
+$navbar-link-color: #666;
+$navbar-link-hover-color: #222;
 $navbar-item-position: center; // left, right, or center
-$navbar-item-background-color: none;
-$navbar-item-background-hover-color: rgba(255,255,255,0.2);
+$navbar-item-background-color: #fff;
+$navbar-item-background-hover-color: #ddd;
 
 // Typography settings
 // ==============================================
@@ -58,15 +58,15 @@ $rhythm-spacing: .168;
 $rhythm-height: .711;
 
 $ratio: golden(); // Ratio for Modular Scale
-$base-font-size: 14px !default;
+$base-font-size: 16px !default;
 
 // Typography Colors
-$header-font-color: #fff !default;
-$header-link-color: #eee !default;
-$header-link-hover-color: #eee !default;
-$body-font-color: #fff !default;
-$body-link-color: #eee !default;
-$body-link-hover-color: #fff !default;
+$header-font-color: #444444 !default;
+$header-link-color: #d04526 !default;
+$header-link-hover-color: #c03d20 !default;
+$body-font-color: #555555 !default;
+$body-link-color: #d04526 !default;
+$body-link-hover-color: #c03d20 !default;
 
 // Sizing
 $xsmall: 10px;
@@ -81,4 +81,3 @@ $xxxlarge: 50px;
 $reallybig: 60px;
 $tremendous: 65px;
 $absurd: 70px;
-

@@ -34,7 +34,7 @@ hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bott
 .container { position: relative; width: 1200px; margin: 0 auto; padding: 0; /* Basic Grid */ /* Offsets */ }
 .container .column, .container .columns { float: left; display: inline; margin: 0; padding: 0 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .container .column.centered, .container .columns.centered { margin: 0 auto; float: none; display: block; height: auto; content: ""; display: table; clear: both; }
-.container .row { margin-bottom: 20px; }
+.container .row { margin-bottom: 0; }
 .container .one.column, .container .one.columns { width: 8.33%; }
 .container .two.columns { width: 16.66%; }
 .container .three.columns { width: 25.00%; }

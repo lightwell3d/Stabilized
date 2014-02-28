@@ -57,9 +57,12 @@
 	// .clearfix:before, .clearfix:after { display: table; content: ""; }
 	// .clearfix:after { clear: both; }
 
-	@media only screen and (max-width: $row-medium-size) {
+	@media only screen and (max-width: ($row-medium-size - 1)) {
 
-		.nav { float: right; }
+		.nav {
+			// float: $navbar-icon-position;
+			width: 100%;
+		}
 
 		ul.menu { 
 			text-align: left;
@@ -70,7 +73,7 @@
 			height: auto;
 			width: 100%;
 			margin: 0;
-			background: #eee;
+			background: $navbar-background-color;
 			z-index: 100;
 
 			li {
@@ -100,16 +103,26 @@
 			-webkit-touch-callout: none;
 			-webkit-user-select: none;
 			user-select: none;
+			// vertical-align: middle;
+
+			// @if $navbar-icon-position == center {
+			// 	width: 50px;
+			// 	margin: 0 auto;
+			// } 
+			// @else if $navbar-icon-position == left {
+			// 	width: 50px;
+			// }
+			// @else { /* */ }
 
 			&:after {
 				content: "☰";
 				display: block;
-				width: 50px;
+				width: 100%;
 				margin: (($navbar-height - ($navbar-link-font-size * 2)) / 2) 0;
 				padding: 0;
-				text-align: center;
+				text-align: $navbar-toggle-icon-position;
 				font-size: $navbar-link-font-size * 2;
-				color: #ccc;
+				color: $navbar-link-color;
 			}
 		}
 		#toggle:checked + div .menu {

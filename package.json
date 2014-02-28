@@ -1,6 +1,6 @@
 {
   "name": "Stabilized",
-  "version": "0.0.0",
+  "version": "2.1.0",
   "description": "A lightweight, responsive css boilerplate. Made by Lightwell.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

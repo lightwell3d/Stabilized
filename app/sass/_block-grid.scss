@@ -31,7 +31,7 @@ ul {
 	}
 	&.three-blocks {
 		li {
-			width: ( 100% / 3 );
+			width: ( 33.33% );
 		}
 	}
 	&.four-blocks {
@@ -81,7 +81,7 @@ ul {
 	}
 }
 
-@media only screen and (max-width: $row-medium-size) {
+@media only screen and (max-width: ($row-medium-size - 1)) {
 	ul[class*='blocks'].block-grid {
 		li {
 			width: 100%;
